@@ -98,7 +98,7 @@ export function getServerConfig(isStdioMode: boolean): ServerConfig {
 
   const config: Omit<ServerConfig, "auth"> = {
     port: 3333,
-    host: "127.0.0.1",
+    host: "0.0.0.0",
     outputFormat: "yaml",
     skipImageDownloads: false,
     configSources: {
